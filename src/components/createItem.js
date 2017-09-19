@@ -9,6 +9,8 @@ export default class CreateItem extends React.Component {
             key: Date.now()
         }
         this.props.createTask(item);
+        this.refs.todoInput.value = "";
+        
     }
 
     render(){
